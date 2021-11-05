@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
@@ -28,6 +29,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: hsl(276, 37%, 76%, 0.4);
 }
 
 section {
@@ -48,7 +50,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: hsl(236, 43%, 75%);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -74,12 +76,13 @@ h2 {
     animation: pulse 5s infinite ease-in-out;
 }
 
-header img {
-    height: var(--header-height);
-}
 
 p {
     margin: var(--gutter);
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
 }
   
 footer {
@@ -112,9 +115,14 @@ footer {
 
 }
 
-#donkey img, #llama img, #peacock img {
+img {
     width: 50%;
     height: 50%;
     border-radius: 70%;
     margin: 40px;
+}
+
+#clicked-on {
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
 }
